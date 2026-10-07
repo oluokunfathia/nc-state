@@ -1,0 +1,1026 @@
+/* =====================================================
+   NC STATE GALLERY / APPLY PAGE
+===================================================== */
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+:root {
+
+    --nc-red: #c90000;
+
+    --dark-red: #8e0000;
+
+    --bright-red: #e00000;
+
+    --nc-yellow: #f4c400;
+
+    --white: #ffffff;
+
+    --black: #111111;
+
+    --light-red: #d90000;
+
+}
+
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    background: var(--nc-red);
+
+    color: white;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+
+}
+
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+
+    background:
+        rgba(125, 0, 0, 0.96);
+
+    border-bottom:
+        3px solid
+        var(--bright-red);
+
+    padding:
+        12px 0;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.navbar-brand {
+
+    font-size:
+        1.5rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        3px;
+
+}
+
+
+.navbar-nav {
+
+    gap:
+        10px;
+
+}
+
+
+.nav-link {
+
+    color:
+        white !important;
+
+    font-weight:
+        700;
+
+    padding:
+        8px 15px !important;
+
+}
+
+
+.nav-link:hover,
+.nav-link.active {
+
+    background:
+        var(--nc-yellow);
+
+    color:
+        var(--black) !important;
+
+}
+
+
+
+/* =====================================================
+   HERO IMAGE
+===================================================== */
+
+.gallery-hero {
+
+    width: 100%;
+
+    height:
+        520px;
+
+    margin-top:
+        60px;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+
+.hero-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    background-image:
+
+        linear-gradient(
+            rgba(0, 0, 0, .08),
+            rgba(0, 0, 0, .08)
+        ),
+
+        url("../images/banner.jpg");
+
+    background-size:
+        cover;
+
+    background-position:
+        center top;
+
+}
+
+
+
+/* =====================================================
+   BEFORE YOU APPLY SECTION
+===================================================== */
+
+.before-section {
+
+    background:
+        var(--nc-red);
+
+    position: relative;
+
+    margin-top:
+        -110px;
+
+    z-index:
+        3;
+
+}
+
+
+.before-box {
+
+    background:
+        var(--nc-yellow);
+
+    color:
+        #271b00;
+
+    padding:
+        25px 35px;
+
+    box-shadow:
+        0 7px 20px
+        rgba(0, 0, 0, .3);
+
+}
+
+
+.before-box h2 {
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        1.5rem;
+
+    font-weight:
+        900;
+
+    margin-bottom:
+        15px;
+
+}
+
+
+.before-box ul {
+
+    margin:
+        0;
+
+    padding-left:
+        22px;
+
+}
+
+
+.before-box li {
+
+    font-size:
+        1rem;
+
+    font-weight:
+        700;
+
+    margin-bottom:
+        6px;
+
+}
+
+
+
+/* =====================================================
+   STEPS SECTION
+===================================================== */
+
+.steps-section {
+
+    background:
+        var(--nc-red);
+
+    padding:
+        45px 0 25px;
+
+}
+
+
+.steps-wrapper {
+
+    max-width:
+        1050px;
+
+    margin:
+        auto;
+
+}
+
+
+.steps-wrapper > h1 {
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            2rem,
+            4vw,
+            3rem
+        );
+
+    font-weight:
+        900;
+
+    margin-bottom:
+        35px;
+
+}
+
+
+
+/* =====================================================
+   INDIVIDUAL STEPS
+===================================================== */
+
+.step {
+
+    margin-bottom:
+        35px;
+
+    padding-left:
+        5px;
+
+    border-left:
+        4px solid
+        rgba(255, 255, 255, .15);
+
+    padding-left:
+        25px;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.step:hover {
+
+    border-left-color:
+        var(--nc-yellow);
+
+    transform:
+        translateX(5px);
+
+}
+
+
+.step h2 {
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        1.3rem;
+
+    font-weight:
+        900;
+
+    color:
+        white;
+
+    margin-bottom:
+        8px;
+
+}
+
+
+.step h2 span {
+
+    font-weight:
+        700;
+
+}
+
+
+.step p {
+
+    font-size:
+        1rem;
+
+    line-height:
+        1.6;
+
+    color:
+        #ffe9e9;
+
+    margin-bottom:
+        5px;
+
+}
+
+
+.step ul {
+
+    margin-top:
+        8px;
+
+}
+
+
+.step li {
+
+    color:
+        #ffe9e9;
+
+    margin-bottom:
+        5px;
+
+}
+
+
+
+/* =====================================================
+   APPLY AREA
+===================================================== */
+
+.apply-area {
+
+    text-align:
+        right;
+
+    margin-top:
+        30px;
+
+    padding:
+        25px 0 10px;
+
+}
+
+
+.apply-area h2 {
+
+    color:
+        var(--nc-yellow);
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-weight:
+        900;
+
+    font-size:
+        clamp(
+            1.5rem,
+            3vw,
+            2.4rem
+        );
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.apply-link {
+
+    display:
+        inline-block;
+
+    color:
+        var(--nc-yellow);
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-weight:
+        900;
+
+    font-size:
+        clamp(
+            1rem,
+            2vw,
+            1.5rem
+        );
+
+    text-decoration:
+        none;
+
+    border-bottom:
+        2px solid
+        var(--nc-yellow);
+
+    padding-bottom:
+        5px;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.apply-link:hover {
+
+    color:
+        white;
+
+    border-color:
+        white;
+
+}
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.gallery-footer {
+
+    background:
+        var(--dark-red);
+
+    padding:
+        35px 0 25px;
+
+    border-top:
+        4px solid
+        rgba(255,255,255,.25);
+
+}
+
+
+.footer-main {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    gap:
+        30px;
+
+}
+
+
+.footer-logo {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+}
+
+
+.footer-logo strong {
+
+    font-size:
+        1.7rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        2px;
+
+}
+
+
+.footer-logo span {
+
+    font-size:
+        1.2rem;
+
+    border-left:
+        1px solid
+        rgba(255,255,255,.5);
+
+    padding-left:
+        10px;
+
+}
+
+
+.footer-contact {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    justify-content:
+        flex-end;
+
+    gap:
+        18px;
+
+    font-size:
+        .9rem;
+
+    color:
+        #ffdede;
+
+}
+
+
+
+/* =====================================================
+   BACK TO TOP
+===================================================== */
+
+.back-to-top {
+
+    position:
+        fixed;
+
+    bottom:
+        25px;
+
+    right:
+        25px;
+
+    width:
+        45px;
+
+    height:
+        45px;
+
+    border:
+        none;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--nc-yellow);
+
+    color:
+        #111;
+
+    font-size:
+        1.2rem;
+
+    display:
+        none;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    z-index:
+        999;
+
+    box-shadow:
+        0 4px 12px
+        rgba(0,0,0,.3);
+
+}
+
+
+.back-to-top.show {
+
+    display:
+        flex;
+
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .gallery-hero {
+
+        height:
+            430px;
+
+    }
+
+
+    .before-section {
+
+        margin-top:
+            -70px;
+
+    }
+
+
+    .before-box {
+
+        margin-right:
+            20px;
+
+    }
+
+
+    .footer-main {
+
+        flex-direction:
+            column;
+
+        text-align:
+            center;
+
+    }
+
+
+    .footer-contact {
+
+        justify-content:
+            center;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+
+        padding:
+            8px 0;
+
+    }
+
+
+    .gallery-hero {
+
+        height:
+            330px;
+
+        margin-top:
+            55px;
+
+    }
+
+
+    .hero-image {
+
+        background-position:
+            center top;
+
+    }
+
+
+    .before-section {
+
+        margin-top:
+            -45px;
+
+    }
+
+
+    .before-box {
+
+        margin:
+            0 15px;
+
+        padding:
+            20px;
+
+    }
+
+
+    .before-box h2 {
+
+        font-size:
+            1.2rem;
+
+    }
+
+
+    .before-box li {
+
+        font-size:
+            .9rem;
+
+    }
+
+
+    .steps-section {
+
+        padding:
+            35px 20px;
+
+    }
+
+
+    .steps-wrapper > h1 {
+
+        font-size:
+            2rem;
+
+    }
+
+
+    .step {
+
+        padding-left:
+            15px;
+
+    }
+
+
+    .step h2 {
+
+        font-size:
+            1.1rem;
+
+    }
+
+
+    .step p,
+    .step li {
+
+        font-size:
+            .9rem;
+
+    }
+
+
+    .apply-area {
+
+        text-align:
+            center;
+
+    }
+
+
+    .footer-logo {
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .footer-logo span {
+
+        border-left:
+            none;
+
+        border-top:
+            1px solid
+            rgba(255,255,255,.5);
+
+        padding:
+            8px 0 0;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .gallery-hero {
+
+        height:
+            270px;
+
+    }
+
+
+    .before-box {
+
+        padding:
+            18px;
+
+    }
+
+
+    .before-box h2 {
+
+        font-size:
+            1rem;
+
+    }
+
+
+    .before-box li {
+
+        font-size:
+            .78rem;
+
+    }
+
+
+    .steps-wrapper > h1 {
+
+        font-size:
+            1.7rem;
+
+    }
+
+
+    .step h2 {
+
+        font-size:
+            .95rem;
+
+    }
+
+
+    .step p,
+    .step li {
+
+        font-size:
+            .78rem;
+
+    }
+
+
+    .apply-area h2 {
+
+        font-size:
+            1.4rem;
+
+    }
+
+
+    .apply-link {
+
+        font-size:
+            .9rem;
+
+    }
+
+
+    .footer-contact {
+
+        flex-direction:
+            column;
+
+        gap:
+            8px;
+
+    }
+
+}
+
+/* ===============================
+   COMMON NAVBAR
+================================ */
+
+.navbar {
+    background: rgba(125, 0, 0, 0.96);
+    border-bottom: 3px solid #e00000;
+    padding: 12px 0;
+    transition: 0.3s ease;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.navbar-nav {
+    gap: 10px;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 700;
+    padding: 8px 15px !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background: #f4c400;
+    color: #111 !important;
+}
+
+.nav-link.active {
+    background: #f4c400;
+    color: #111 !important;
+}
+
+.navbar-toggler {
+    border: 1px solid #fff;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/* Mobile */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        margin-top: 15px;
+        gap: 3px;
+    }
+
+    .nav-link {
+        padding: 10px 15px !important;
+    }
+
+}

@@ -1,0 +1,1428 @@
+/* =====================================================
+   NC STATE CONTACT PAGE
+===================================================== */
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+:root {
+
+    --red: #c90000;
+
+    --dark-red: #920000;
+
+    --yellow: #f4c400;
+
+    --blue: #609bc4;
+
+    --white: #ffffff;
+
+    --black: #111111;
+
+}
+
+
+
+/* =====================================================
+   GENERAL
+===================================================== */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: var(--red);
+
+    overflow-x: hidden;
+
+}
+
+
+img {
+
+    max-width: 100%;
+
+}
+
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+
+    background:
+        #8e0000;
+
+    border-bottom:
+        4px solid
+        #e00000;
+
+    padding:
+        12px 0;
+
+}
+
+
+.navbar-brand {
+
+    font-size: 1.5rem;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+}
+
+
+.nav-link {
+
+    color: white !important;
+
+    font-weight: 600;
+
+    margin-left: 15px;
+
+}
+
+
+.nav-link:hover {
+
+    color:
+        #ffdede !important;
+
+}
+
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero-section {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 500px;
+
+    overflow: hidden;
+
+}
+
+
+.hero-image {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+
+        linear-gradient(
+            rgba(0,0,0,.12),
+            rgba(0,0,0,.12)
+        ),
+
+        url("../images/image2.jpg");
+
+    background-size: cover;
+
+    background-position:
+        center top;
+
+}
+
+
+.hero-text {
+
+    position: absolute;
+
+    top: 35px;
+
+    right: 6%;
+
+    color: white;
+
+    text-align: center;
+
+    text-shadow:
+        2px 2px 5px rgba(0,0,0,.7);
+
+}
+
+
+.hero-text h1 {
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            1.2rem,
+            2.5vw,
+            2.3rem
+        );
+
+    font-weight: 900;
+
+    margin: 0;
+
+}
+
+
+
+/* =====================================================
+   RANKING
+===================================================== */
+
+.ranking-section {
+
+    position: relative;
+
+    background:
+        var(--white);
+
+    min-height: 100px;
+
+}
+
+
+.ranking-banner {
+
+    position: relative;
+
+    margin-top: -65px;
+
+    margin-left: auto;
+
+    margin-right: 4%;
+
+    width: 57%;
+
+    max-width: 700px;
+
+    background:
+        var(--yellow);
+
+    color: #111;
+
+    text-align: center;
+
+    padding:
+        18px 25px;
+
+    z-index: 5;
+
+}
+
+
+.ranking-banner h2 {
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            1rem,
+            2.2vw,
+            1.8rem
+        );
+
+    font-weight: 900;
+
+    margin: 0;
+
+}
+
+
+.ranking-banner p {
+
+    margin: 2px 0 0;
+
+    font-weight: 700;
+
+}
+
+
+
+/* =====================================================
+   PROGRAMS + MAP
+===================================================== */
+
+.program-map-section {
+
+    background:
+        white;
+
+}
+
+
+.programs-panel {
+
+    min-height: 690px;
+
+    background:
+        var(--red);
+
+    color: white;
+
+    padding:
+        35px 45px;
+
+}
+
+
+.programs-panel h2 {
+
+    font-size:
+        1.25rem;
+
+    font-weight: 900;
+
+    margin-bottom: 20px;
+
+}
+
+
+.programs-panel ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+
+.programs-panel li {
+
+    font-size:
+        1rem;
+
+    font-weight: 600;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* =====================================================
+   CATALOG BUTTON
+===================================================== */
+
+.catalog-button {
+
+    display: block;
+
+    width: fit-content;
+
+    margin-top: 25px;
+
+    background:
+        var(--yellow);
+
+    color:
+        #3b2600;
+
+    padding:
+        13px 25px;
+
+    text-decoration: none;
+
+    transition:
+        .3s;
+
+}
+
+
+.catalog-button:hover {
+
+    color: #111;
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 7px 15px
+        rgba(0,0,0,.25);
+
+}
+
+
+.catalog-button strong {
+
+    display: inline;
+
+    font-family:
+        Georgia,
+        serif;
+
+}
+
+
+.catalog-button span {
+
+    font-weight: 600;
+
+}
+
+
+.catalog-button small {
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-weight: 700;
+
+}
+
+
+
+/* =====================================================
+   MAP PANEL
+===================================================== */
+
+.map-panel {
+
+    min-height: 690px;
+
+    background:
+        #f9f9f9;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.map-content {
+
+    position: relative;
+
+    height: 690px;
+
+    background:
+
+        radial-gradient(
+            ellipse at 50% 50%,
+            rgba(220,220,220,.3),
+            transparent 60%
+        );
+
+}
+
+
+
+/* =====================================================
+   CITY LABELS
+===================================================== */
+
+.city {
+
+    position: absolute;
+
+    color:
+        #666;
+
+    font-size:
+        .75rem;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+}
+
+
+.city span {
+
+    display: inline-block;
+
+    width: 10px;
+
+    height: 10px;
+
+    border-radius: 50%;
+
+    background:
+        var(--yellow);
+
+    margin-right: 6px;
+
+}
+
+
+.city-boston {
+
+    top: 15%;
+
+    right: 25%;
+
+}
+
+
+.city-newyork {
+
+    top: 24%;
+
+    right: 32%;
+
+}
+
+
+.city-washington {
+
+    top: 34%;
+
+    right: 42%;
+
+}
+
+
+.city-atlanta {
+
+    top: 57%;
+
+    left: 23%;
+
+}
+
+
+.city-miami {
+
+    bottom: 27%;
+
+    left: 55%;
+
+}
+
+
+
+/* =====================================================
+   NORTH CAROLINA
+===================================================== */
+
+.city-raleigh {
+
+    top: 38%;
+
+    right: 12%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color:
+        #9b4150;
+
+    font-size:
+        1rem;
+
+}
+
+
+.north-carolina {
+
+    width: 180px;
+
+    height: 100px;
+
+    background:
+        var(--red);
+
+    clip-path:
+        polygon(
+            5% 45%,
+            25% 25%,
+            45% 30%,
+            65% 15%,
+            96% 30%,
+            88% 48%,
+            98% 65%,
+            70% 63%,
+            55% 80%,
+            35% 68%,
+            15% 78%,
+            20% 55%,
+            5% 45%
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-size: 1.5rem;
+
+}
+
+
+
+/* =====================================================
+   WEATHER
+===================================================== */
+
+.weather-box {
+
+    position: absolute;
+
+    bottom: 35px;
+
+    left: 20%;
+
+    display: flex;
+
+    gap: 70px;
+
+    text-align: center;
+
+}
+
+
+.weather-item {
+
+    color:
+        #777;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+.weather-item strong {
+
+    font-size:
+        1.3rem;
+
+    color:
+        #555;
+
+}
+
+
+.weather-item span {
+
+    font-size:
+        1rem;
+
+}
+
+
+.weather-item small {
+
+    font-size:
+        .7rem;
+
+}
+
+
+.sun,
+.cloud {
+
+    font-size:
+        3rem;
+
+    width: 75px;
+
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+}
+
+
+.sun {
+
+    background:
+        #fff4a0;
+
+    color:
+        #f0d000;
+
+}
+
+
+.cloud {
+
+    background:
+        #eee;
+
+    color:
+        #ccc;
+
+}
+
+
+
+/* =====================================================
+   GRADUATE IMAGE SECTION
+===================================================== */
+
+.graduate-section {
+
+    background:
+        white;
+
+}
+
+
+.graduate-image {
+
+    min-height: 650px;
+
+    position: relative;
+
+    background-image:
+
+        linear-gradient(
+            rgba(130,0,0,.15),
+            rgba(130,0,0,.15)
+        ),
+
+        url("../images/image3.jpg");
+
+    background-size:
+        150% auto;
+
+    background-position:
+        10%
+        95%;
+
+}
+
+
+
+/* =====================================================
+   IMAGE LABEL
+===================================================== */
+
+.image-label {
+
+    position: absolute;
+
+    top: 55px;
+
+    left: 0;
+
+    background:
+        var(--yellow);
+
+    color:
+        #2e2100;
+
+    padding:
+        18px 30px;
+
+    min-width: 280px;
+
+}
+
+
+.image-label strong {
+
+    display: block;
+
+    font-size:
+        1.3rem;
+
+    font-family:
+        Georgia,
+        serif;
+
+}
+
+
+.image-label span {
+
+    font-weight: 700;
+
+}
+
+
+
+/* =====================================================
+   CONTACT INFORMATION
+===================================================== */
+
+.contact-information {
+
+    min-height: 650px;
+
+    background:
+        #111;
+
+    color: white;
+
+    padding:
+        50px;
+
+}
+
+
+.contact-information h2 {
+
+    color:
+        var(--yellow);
+
+    font-size:
+        1.6rem;
+
+    font-weight: 900;
+
+    margin-bottom: 25px;
+
+}
+
+
+.contact-information > p {
+
+    color:
+        #ddd;
+
+    line-height:
+        1.7;
+
+    margin-bottom:
+        35px;
+
+}
+
+
+.contact-item {
+
+    display: flex;
+
+    gap: 20px;
+
+    align-items: flex-start;
+
+    margin-bottom: 25px;
+
+}
+
+
+.contact-item i {
+
+    color:
+        var(--yellow);
+
+    font-size:
+        1.5rem;
+
+}
+
+
+.contact-item strong {
+
+    display: block;
+
+    color:
+        white;
+
+}
+
+
+.contact-item p {
+
+    margin: 3px 0 0;
+
+    color:
+        #bbb;
+
+}
+
+
+
+/* =====================================================
+   LEARN MORE BUTTON
+===================================================== */
+
+.apply-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background:
+        var(--yellow);
+
+    color:
+        #111;
+
+    padding:
+        13px 25px;
+
+    text-decoration: none;
+
+    font-weight: 900;
+
+    margin-top: 10px;
+
+    transition:
+        .3s;
+
+}
+
+
+.apply-button:hover {
+
+    background:
+        white;
+
+    color:
+        #111;
+
+    transform:
+        translateX(5px);
+
+}
+
+
+
+/* =====================================================
+   FINAL CONTACT
+===================================================== */
+
+.final-contact {
+
+    background:
+        var(--red);
+
+    color: white;
+
+    padding:
+        65px 20px;
+
+}
+
+
+.final-contact h2 {
+
+    font-size:
+        clamp(
+            2rem,
+            4vw,
+            3.5rem
+        );
+
+    font-weight: 900;
+
+}
+
+
+.final-contact p {
+
+    font-size:
+        1.2rem;
+
+    color:
+        #ffe0e0;
+
+}
+
+
+.final-button {
+
+    display: inline-block;
+
+    background:
+        var(--yellow);
+
+    color:
+        #111;
+
+    padding:
+        17px 28px;
+
+    font-weight: 900;
+
+    text-decoration: none;
+
+    transition:
+        .3s;
+
+}
+
+
+.final-button:hover {
+
+    background:
+        white;
+
+    color:
+        #111;
+
+    transform:
+        translateY(-4px);
+
+}
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    background:
+        var(--dark-red);
+
+    color: white;
+
+    padding:
+        45px 20px 25px;
+
+}
+
+
+footer h3 {
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+}
+
+
+footer hr {
+
+    border-color:
+        rgba(255,255,255,.4);
+
+    margin:
+        30px 0 20px;
+
+}
+
+
+.copyright {
+
+    text-align: center;
+
+    opacity: .8;
+
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 992px) {
+
+
+    .hero-section {
+
+        height: 420px;
+
+    }
+
+
+    .ranking-banner {
+
+        width: 75%;
+
+    }
+
+
+    .programs-panel,
+    .map-panel {
+
+        min-height: 600px;
+
+    }
+
+
+    .map-content {
+
+        height: 600px;
+
+    }
+
+
+    .graduate-image,
+    .contact-information {
+
+        min-height: 550px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+
+    .hero-section {
+
+        height: 320px;
+
+    }
+
+
+    .hero-text {
+
+        top: 25px;
+
+        right: 5%;
+
+    }
+
+
+    .hero-text h1 {
+
+        font-size:
+            .95rem;
+
+    }
+
+
+    .ranking-banner {
+
+        width: 90%;
+
+        margin-top: -35px;
+
+        margin-right: 5%;
+
+        padding:
+            12px;
+
+    }
+
+
+    .ranking-banner h2 {
+
+        font-size:
+            1rem;
+
+    }
+
+
+    .programs-panel {
+
+        min-height: auto;
+
+        padding:
+            30px 25px;
+
+    }
+
+
+    .map-panel {
+
+        min-height: 550px;
+
+    }
+
+
+    .map-content {
+
+        height: 550px;
+
+    }
+
+
+    .city-raleigh {
+
+        right: 5%;
+
+    }
+
+
+    .north-carolina {
+
+        width: 130px;
+
+        height: 75px;
+
+    }
+
+
+    .weather-box {
+
+        left: 10%;
+
+        gap: 30px;
+
+    }
+
+
+    .graduate-image {
+
+        min-height: 450px;
+
+    }
+
+
+    .contact-information {
+
+        min-height: auto;
+
+        padding:
+            35px 25px;
+
+    }
+
+
+    .final-contact {
+
+        text-align: center;
+
+    }
+
+
+    .final-button {
+
+        margin-top:
+            25px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+
+    .hero-section {
+
+        height: 270px;
+
+    }
+
+
+    .hero-text {
+
+        top: 20px;
+
+        right: 3%;
+
+    }
+
+
+    .hero-text h1 {
+
+        font-size:
+            .7rem;
+
+    }
+
+
+    .ranking-banner {
+
+        width: 95%;
+
+        margin-right: 2.5%;
+
+    }
+
+
+    .programs-panel li {
+
+        font-size:
+            .85rem;
+
+    }
+
+
+    .map-panel {
+
+        min-height: 500px;
+
+    }
+
+
+    .map-content {
+
+        height: 500px;
+
+    }
+
+
+    .city {
+
+        font-size:
+            .55rem;
+
+    }
+
+
+    .city-raleigh {
+
+        flex-direction:
+            column;
+
+        gap: 2px;
+
+    }
+
+
+    .north-carolina {
+
+        width: 110px;
+
+        height: 60px;
+
+    }
+
+
+    .weather-box {
+
+        left: 5%;
+
+        gap: 15px;
+
+    }
+
+
+    .weather-item {
+
+        transform:
+            scale(.85);
+
+    }
+
+
+    .image-label {
+
+        min-width: 220px;
+
+        padding:
+            12px 18px;
+
+    }
+
+
+    .contact-information h2 {
+
+        font-size:
+            1.3rem;
+
+    }
+
+}
+
+/* ===============================
+   COMMON NAVBAR
+================================ */
+
+.navbar {
+    background: rgba(125, 0, 0, 0.96);
+    border-bottom: 3px solid #e00000;
+    padding: 12px 0;
+    transition: 0.3s ease;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.navbar-nav {
+    gap: 10px;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 700;
+    padding: 8px 15px !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background: #f4c400;
+    color: #111 !important;
+}
+
+.nav-link.active {
+    background: #f4c400;
+    color: #111 !important;
+}
+
+.navbar-toggler {
+    border: 1px solid #fff;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/* Mobile */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        margin-top: 15px;
+        gap: 3px;
+    }
+
+    .nav-link {
+        padding: 10px 15px !important;
+    }
+
+}

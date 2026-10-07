@@ -1,0 +1,858 @@
+/* =====================================================
+   NC STATE BROCHURE WEBSITE
+===================================================== */
+
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #c90000;
+
+    color: white;
+
+}
+
+
+.brochure-page {
+
+    width: 100%;
+
+    overflow: hidden;
+
+}
+
+
+/* =====================================================
+   TOP IMAGE
+===================================================== */
+
+.top-image-section {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 430px;
+
+    overflow: hidden;
+
+    border-top: 7px solid #b40000;
+
+}
+
+
+.top-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    display: block;
+
+}
+
+
+/* dark overlay */
+
+.top-image-section::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,0.05),
+            rgba(0,0,0,0.25)
+        );
+
+    pointer-events: none;
+
+}
+
+
+/* white text */
+
+.top-image-text {
+
+    position: absolute;
+
+    right: 5%;
+
+    top: 42%;
+
+    transform: translateY(-50%);
+
+    z-index: 5;
+
+    text-align: center;
+
+    color: white;
+
+    text-shadow:
+        2px 2px 5px rgba(0,0,0,.7);
+
+}
+
+
+.top-image-text h2 {
+
+    font-size: clamp(
+        1.4rem,
+        3vw,
+        3rem
+    );
+
+    font-weight: 800;
+
+    margin: 0;
+
+}
+
+
+.top-image-text p {
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    margin-top: 8px;
+
+}
+
+
+
+/* =====================================================
+   NC STATE CENTER
+===================================================== */
+
+.nc-state-center {
+
+    background: #d00000;
+
+    text-align: center;
+
+    padding:
+
+        55px
+        20px
+        65px;
+
+}
+
+
+.nc-state-center h1 {
+
+    font-size:
+        clamp(
+            3rem,
+            7vw,
+            6rem
+        );
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.nc-state-center h2 {
+
+    font-size:
+        clamp(
+            2rem,
+            5vw,
+            4rem
+        );
+
+    font-weight: 300;
+
+    margin-bottom: 45px;
+
+}
+
+
+.virtual-tour {
+
+    font-size:
+        clamp(
+            1rem,
+            2vw,
+            1.6rem
+        );
+
+    font-weight: 900;
+
+}
+
+
+.virtual-tour span {
+
+    font-weight: 400;
+
+}
+
+
+
+/* =====================================================
+   STUDENT IMAGE
+===================================================== */
+
+.students-section {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 530px;
+
+    overflow: hidden;
+
+    background: #222;
+
+}
+
+
+.students-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    /*
+    Move the image down so the
+    student area becomes visible.
+    */
+
+    object-position:
+        center
+        73%;
+
+    display: block;
+
+}
+
+
+
+/* =====================================================
+   YELLOW INTERNATIONAL LABEL
+===================================================== */
+
+.international-label {
+
+    position: absolute;
+
+    right: 4%;
+
+    bottom: 12%;
+
+    background: #ffd900;
+
+    color: #111;
+
+    padding:
+
+        15px
+        35px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.25);
+
+}
+
+
+.international-label strong {
+
+    display: block;
+
+    font-size:
+        clamp(
+            1.4rem,
+            3vw,
+            2.5rem
+        );
+
+    font-weight: 900;
+
+}
+
+
+.international-label span {
+
+    display: block;
+
+    font-size:
+        clamp(
+            1rem,
+            2vw,
+            1.5rem
+        );
+
+    font-weight: 700;
+
+}
+
+
+
+/* =====================================================
+   ACHIEVEMENT SECTION
+===================================================== */
+
+.achievement-section {
+
+    background: #d00000;
+
+    padding:
+
+        45px
+        20px
+        55px;
+
+}
+
+
+.achievement-content {
+
+    padding-right: 30px;
+
+}
+
+
+.achievement-content p {
+
+    color: white;
+
+    font-size:
+        clamp(
+            1rem,
+            2vw,
+            1.6rem
+        );
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+
+    line-height: 1.35;
+
+}
+
+
+
+/* =====================================================
+   QR CODE AREA
+===================================================== */
+
+.qr-area {
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+.qr-code {
+
+    width: 220px;
+
+    height: 220px;
+
+    background-image:url("../images/banner.jpg");
+
+    /*
+    Crop the QR section from the
+    supplied brochure image.
+    */
+
+    background-repeat: no-repeat;
+
+    background-size: 475% auto;
+
+    background-position:
+        93%
+        89%;
+
+    background-color: white;
+
+    border: 10px solid white;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,.25);
+
+}
+
+
+.qr-text {
+
+    margin-top: 20px;
+
+    color: #ffe100;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* =====================================================
+   INFORMATION
+===================================================== */
+
+.information-section {
+
+    background: white;
+
+    color: #222;
+
+    padding: 70px 20px;
+
+}
+
+
+.info-card {
+
+    background: #f7f7f7;
+
+    padding: 35px;
+
+    height: 100%;
+
+    border-top:
+        5px solid #cc0000;
+
+    transition: .3s;
+
+}
+
+
+.info-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(0,0,0,.12);
+
+}
+
+
+.info-card i {
+
+    font-size: 45px;
+
+    color: #cc0000;
+
+    margin-bottom: 20px;
+
+}
+
+
+.info-card h3 {
+
+    font-size: 1.5rem;
+
+    font-weight: 800;
+
+}
+
+
+.info-card p {
+
+    color: #666;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+
+    background: #900000;
+
+    padding:
+        45px
+        20px
+        25px;
+
+}
+
+
+.footer h3 {
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+}
+
+
+.footer p {
+
+    margin-bottom: 5px;
+
+}
+
+
+.footer hr {
+
+    border-color:
+        rgba(255,255,255,.4);
+
+    margin:
+        30px 0
+        20px;
+
+}
+
+
+.copyright {
+
+    text-align: center;
+
+    opacity: .8;
+
+}
+
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 992px) {
+
+
+    .top-image-section {
+
+        height: 350px;
+
+    }
+
+
+    .top-image-text {
+
+        right: 3%;
+
+        top: 40%;
+
+    }
+
+
+    .students-section {
+
+        height: 450px;
+
+    }
+
+
+    .international-label {
+
+        right: 3%;
+
+        bottom: 10%;
+
+    }
+
+
+    .qr-code {
+
+        width: 190px;
+
+        height: 190px;
+
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+
+    .top-image-section {
+
+        height: 300px;
+
+    }
+
+
+    .top-image-text {
+
+        left: 45%;
+
+        right: 3%;
+
+        top: 45%;
+
+    }
+
+
+    .top-image-text h2 {
+
+        font-size: 1.1rem;
+
+    }
+
+
+    .top-image-text p {
+
+        font-size: .7rem;
+
+    }
+
+
+    .nc-state-center {
+
+        padding:
+            40px
+            15px
+            45px;
+
+    }
+
+
+    .nc-state-center h1 {
+
+        font-size: 3rem;
+
+    }
+
+
+    .nc-state-center h2 {
+
+        font-size: 2rem;
+
+        margin-bottom: 30px;
+
+    }
+
+
+    .students-section {
+
+        height: 400px;
+
+    }
+
+
+    .international-label {
+
+        right: 15px;
+
+        bottom: 20px;
+
+        padding:
+            10px
+            18px;
+
+    }
+
+
+    .international-label strong {
+
+        font-size: 1.2rem;
+
+    }
+
+
+    .international-label span {
+
+        font-size: .9rem;
+
+    }
+
+
+    .achievement-section {
+
+        padding:
+            35px
+            15px;
+
+    }
+
+
+    .achievement-content {
+
+        padding-right: 0;
+
+        margin-bottom: 30px;
+
+    }
+
+
+    .achievement-content p {
+
+        font-size: 1.1rem;
+
+    }
+
+
+}
+
+
+
+@media (max-width: 480px) {
+
+
+    .top-image-section {
+
+        height: 240px;
+
+    }
+
+
+    .top-image-text {
+
+        left: 42%;
+
+        top: 40%;
+
+    }
+
+
+    .top-image-text h2 {
+
+        font-size: .75rem;
+
+    }
+
+
+    .top-image-text p {
+
+        font-size: .5rem;
+
+    }
+
+
+    .students-section {
+
+        height: 330px;
+
+    }
+
+
+    .international-label {
+
+        right: 8px;
+
+        bottom: 10px;
+
+    }
+
+
+    .qr-code {
+
+        width: 180px;
+
+        height: 180px;
+
+    }
+
+}
+
+
+/* ===============================
+   COMMON NAVBAR
+================================ */
+
+.navbar {
+    background: rgba(125, 0, 0, 0.96);
+    border-bottom: 3px solid #e00000;
+    padding: 12px 0;
+    transition: 0.3s ease;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.navbar-nav {
+    gap: 10px;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 700;
+    padding: 8px 15px !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background: #f4c400;
+    color: #111 !important;
+}
+
+.nav-link.active {
+    background: #f4c400;
+    color: #111 !important;
+}
+
+.navbar-toggler {
+    border: 1px solid #fff;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/* Mobile */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        margin-top: 15px;
+        gap: 3px;
+    }
+
+    .nav-link {
+        padding: 10px 15px !important;
+    }
+
+}

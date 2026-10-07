@@ -1,0 +1,900 @@
+/* =====================================================
+   NC STATE ABOUT PAGE
+===================================================== */
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+:root {
+
+    --nc-red: #c90000;
+
+    --nc-dark-red: #990000;
+
+    --nc-blue: #5592bd;
+
+    --nc-yellow: #f3a900;
+
+    --white: #ffffff;
+
+    --black: #111111;
+
+}
+
+
+
+/* =====================================================
+   GENERAL
+===================================================== */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: var(--nc-red);
+
+    overflow-x: hidden;
+
+}
+
+
+section {
+
+    width: 100%;
+
+}
+
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+
+    background:
+        rgba(130, 0, 0, .97);
+
+    border-bottom:
+        4px solid #e00000;
+
+    padding:
+        14px 0;
+
+}
+
+
+.navbar-brand {
+
+    font-size: 1.5rem;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+}
+
+
+.nav-link {
+
+    color: white !important;
+
+    font-weight: 600;
+
+    margin-left: 15px;
+
+}
+
+
+.nav-link:hover {
+
+    color: #ffdbdb !important;
+
+}
+
+
+
+/* =====================================================
+   TOP IMAGE SECTION
+===================================================== */
+
+.top-section {
+
+    position: relative;
+
+    height: 520px;
+
+    overflow: hidden;
+
+}
+
+
+.top-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    background-image:
+
+        linear-gradient(
+            rgba(0,0,0,.15),
+            rgba(0,0,0,.15)
+        ),
+
+        url("../images/image2.jpg");
+
+    background-size: cover;
+
+    background-position:
+        center top;
+
+}
+
+
+
+/* =====================================================
+   RALEIGH RED BOX
+===================================================== */
+
+.raleigh-box {
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 55px;
+
+    width: 55%;
+
+    max-width: 650px;
+
+    background:
+        var(--nc-red);
+
+    color: white;
+
+    padding:
+        20px
+        30px;
+
+}
+
+
+.raleigh-box p {
+
+    margin: 0;
+
+    font-size:
+        clamp(
+            1.2rem,
+            2.3vw,
+            2rem
+        );
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+}
+
+
+
+/* =====================================================
+   FINANCIAL SECTION
+===================================================== */
+
+.financial-section {
+
+    background: white;
+
+}
+
+
+.financial-image {
+
+    height: 570px;
+
+    position: relative;
+
+    background-image:
+
+        url("../images/image1.jpg");
+
+    background-size: cover;
+
+    background-position:
+        left
+        48%;
+
+}
+
+
+
+/* =====================================================
+   EMPLOYABILITY BADGE
+===================================================== */
+
+.graduate-badge {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 52%;
+
+    transform:
+        translate(-50%, -50%);
+
+    width: 270px;
+
+    height: 270px;
+
+    background:
+        var(--nc-red);
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 25px;
+
+    border:
+        8px
+        solid white;
+
+    clip-path:
+        polygon(
+            50% 0%,
+            61% 8%,
+            75% 4%,
+            84% 15%,
+            96% 17%,
+            94% 31%,
+            100% 43%,
+            92% 53%,
+            98% 67%,
+            87% 75%,
+            87% 90%,
+            73% 89%,
+            63% 100%,
+            50% 92%,
+            37% 100%,
+            27% 89%,
+            13% 90%,
+            13% 75%,
+            2% 67%,
+            8% 53%,
+            0% 43%,
+            6% 31%,
+            4% 17%,
+            16% 15%,
+            25% 4%,
+            39% 8%
+        );
+
+}
+
+
+.graduate-badge span {
+
+    font-size:
+        1.25rem;
+
+    font-weight: 900;
+
+    line-height: 1.1;
+
+}
+
+
+.graduate-badge small {
+
+    margin-top: 15px;
+
+    font-size: .65rem;
+
+}
+
+
+
+/* =====================================================
+   FINANCIAL CONTENT
+===================================================== */
+
+.financial-content {
+
+    height: 570px;
+
+    background:
+        var(--nc-red);
+
+    color: white;
+
+    padding:
+        35px
+        50px;
+
+}
+
+
+.financial-content h2 {
+
+    font-size: 1.5rem;
+
+    font-weight: 900;
+
+    margin-bottom: 25px;
+
+}
+
+
+.financial-content p {
+
+    font-size:
+        1rem;
+
+    line-height: 1.6;
+
+}
+
+
+.financial-content ul {
+
+    padding-left: 20px;
+
+}
+
+
+.financial-content li {
+
+    margin-bottom: 7px;
+
+    font-size:
+        1rem;
+
+}
+
+
+.more-info {
+
+    margin-top: 30px;
+
+}
+
+
+
+/* =====================================================
+   RESOURCES SECTION
+===================================================== */
+
+.resources-section {
+
+    background: white;
+
+}
+
+
+
+/* =====================================================
+   BLUE QUOTE AREA
+===================================================== */
+
+.quote-area {
+
+    min-height: 650px;
+
+    background:
+        var(--nc-blue);
+
+    color: white;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.quote-text {
+
+    padding:
+        40px
+        35px
+        20px;
+
+    text-align: center;
+
+}
+
+
+.quote-text p {
+
+    font-size:
+        clamp(
+            1.1rem,
+            2vw,
+            1.6rem
+        );
+
+    font-weight: 600;
+
+    line-height: 1.35;
+
+}
+
+
+.quote-text strong {
+
+    display: block;
+
+    margin-top: 15px;
+
+    font-size:
+        1rem;
+
+}
+
+
+
+/* =====================================================
+   STUDENT PHOTO
+===================================================== */
+
+.student-photo {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    height: 310px;
+
+    background-image:
+
+        url("../images/adufe.jpg");
+
+    background-size: 205% auto;
+
+    background-position:
+        14%
+        93%;
+
+    background-repeat: no-repeat;
+
+}
+
+
+
+/* =====================================================
+   YELLOW RESOURCES
+===================================================== */
+
+.resources-content {
+
+    min-height: 650px;
+
+    background:
+        var(--nc-yellow);
+
+    color: white;
+
+    padding:
+        40px
+        45px;
+
+}
+
+
+.resources-content h2 {
+
+    font-size:
+        1.4rem;
+
+    font-weight: 900;
+
+    margin-bottom: 35px;
+
+}
+
+
+.resource-item {
+
+    margin-bottom: 25px;
+
+}
+
+
+.resource-item h3 {
+
+    font-size:
+        1rem;
+
+    font-weight: 900;
+
+    margin-bottom: 5px;
+
+}
+
+
+.resource-item p {
+
+    margin: 0;
+
+    font-size:
+        .9rem;
+
+}
+
+
+.resource-item ul {
+
+    padding-left: 20px;
+
+    margin-top: 8px;
+
+}
+
+
+.resource-item li {
+
+    margin-bottom: 4px;
+
+}
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    background:
+        var(--nc-dark-red);
+
+    color: white;
+
+    padding:
+        45px
+        20px
+        25px;
+
+}
+
+
+footer h3 {
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+}
+
+
+footer hr {
+
+    border-color:
+        rgba(255,255,255,.4);
+
+}
+
+
+.copyright {
+
+    text-align: center;
+
+    opacity: .8;
+
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 992px) {
+
+
+    .top-section {
+
+        height: 430px;
+
+    }
+
+
+    .raleigh-box {
+
+        width: 70%;
+
+    }
+
+
+    .financial-image {
+
+        height: 450px;
+
+    }
+
+
+    .financial-content {
+
+        height: auto;
+
+        min-height: 450px;
+
+    }
+
+
+    .quote-area {
+
+        min-height: 600px;
+
+    }
+
+
+    .resources-content {
+
+        min-height: auto;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+
+    .top-section {
+
+        height: 330px;
+
+    }
+
+
+    .top-image {
+
+        background-position:
+            center top;
+
+    }
+
+
+    .raleigh-box {
+
+        width: 90%;
+
+        bottom: 20px;
+
+        padding:
+            12px
+            18px;
+
+    }
+
+
+    .raleigh-box p {
+
+        font-size:
+            1rem;
+
+    }
+
+
+    .financial-image {
+
+        height: 380px;
+
+    }
+
+
+    .financial-content {
+
+        padding:
+            30px
+            25px;
+
+    }
+
+
+    .graduate-badge {
+
+        width: 220px;
+
+        height: 220px;
+
+    }
+
+
+    .graduate-badge span {
+
+        font-size:
+            1rem;
+
+    }
+
+
+    .quote-area {
+
+        min-height: 600px;
+
+    }
+
+
+    .resources-content {
+
+        padding:
+            35px
+            25px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL PHONES
+===================================================== */
+
+@media (max-width: 480px) {
+
+
+    .top-section {
+
+        height: 280px;
+
+    }
+
+
+    .raleigh-box {
+
+        width: 95%;
+
+    }
+
+
+    .financial-image {
+
+        height: 330px;
+
+    }
+
+
+    .graduate-badge {
+
+        width: 190px;
+
+        height: 190px;
+
+        padding: 15px;
+
+    }
+
+
+    .graduate-badge span {
+
+        font-size:
+            .85rem;
+
+    }
+
+
+    .graduate-badge small {
+
+        font-size:
+            .5rem;
+
+    }
+
+
+    .quote-area {
+
+        min-height: 550px;
+
+    }
+
+}
+
+/* ===============================
+   COMMON NAVBAR
+================================ */
+
+.navbar {
+    background: rgba(125, 0, 0, 0.96);
+    border-bottom: 3px solid #e00000;
+    padding: 12px 0;
+    transition: 0.3s ease;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.navbar-nav {
+    gap: 10px;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 700;
+    padding: 8px 15px !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background: #f4c400;
+    color: #111 !important;
+}
+
+.nav-link.active {
+    background: #f4c400;
+    color: #111 !important;
+}
+
+.navbar-toggler {
+    border: 1px solid #fff;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/* Mobile */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        margin-top: 15px;
+        gap: 3px;
+    }
+
+    .nav-link {
+        padding: 10px 15px !important;
+    }
+
+}
